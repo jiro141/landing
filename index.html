@@ -1,49 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="DeTip Tech Team: tecnología, automatización e inteligencia artificial para hacer crecer tu empresa." />
-  <title>DeTip | Tu equipo tecnológico</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#081427">
+  <meta name="description" content="DeTip Tech Team: desarrollo, automatización, inteligencia artificial e integraciones para que tu negocio avance.">
+  <title>DeTip | Tu equipo tecnológico para crecer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="hero" id="inicio">
-    <div class="wrap">
-      <nav aria-label="Navegación principal">
-        <a href="#inicio" class="brand" aria-label="DeTip, ir al inicio">De<span>Tip</span>.</a>
-        <div class="links"><a href="#servicios">Servicios</a><a href="#nosotros">Nosotros</a><a href="#contacto" class="button">Hablemos ↗</a></div>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header" id="inicio">
+    <div class="container nav-wrap">
+      <a class="brand" href="#inicio" aria-label="DeTip, ir al inicio">De<span>Tip</span><b>.</b></a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-controls="nav-links" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav-links" id="nav-links" aria-label="Navegación principal">
+        <a href="#soluciones">Soluciones</a><a href="#metodo">Cómo trabajamos</a><a href="#faq">Preguntas frecuentes</a><a href="#contacto" class="button button-small">Agendar conversación <span aria-hidden="true">↗</span></a>
       </nav>
-      <div class="hero-grid">
-        <div>
-          <div class="eyebrow"><i class="dot"></i> TU ALIADO TECNOLÓGICO</div>
-          <h1>Tu empresa crece.<br /><strong>La tecnología</strong> evoluciona contigo.</h1>
-          <p class="lead">Desarrollamos software, conectamos tus herramientas y automatizamos procesos con inteligencia artificial para que tu equipo se enfoque en lo importante.</p>
-          <div class="hero-actions"><a href="#contacto" class="button">Hablemos de tu proyecto ↗</a><a href="#servicios" class="button secondary">Explorar soluciones</a></div>
-        </div>
-        <div class="visual" role="img" aria-label="Ilustración de un panel con automatizaciones, integraciones y análisis de procesos">
-          <div class="visual-header"><span>✦ Ecosistema inteligente</span><span class="lights">● ● ●</span></div>
-          <div class="mini-grid">
-            <div class="mini-card"><span>Automatizaciones</span><b class="green">↗ Activas</b></div>
-            <div class="mini-card"><span>Integraciones</span><b class="violet">∞ Conectadas</b></div>
-            <div class="mini-card wide"><span>Optimización continua</span><div class="bars"><i style="height:32%"></i><i style="height:42%"></i><i style="height:38%"></i><i style="height:60%"></i><i style="height:55%"></i><i style="height:76%"></i><i style="height:70%"></i><i style="height:91%"></i><i style="height:100%"></i></div></div>
-          </div>
-        </div>
-      </div>
     </div>
   </header>
-  <main>
-    <section class="section" id="servicios"><div class="wrap"><div class="center"><h2>Tecnología que trabaja para ti</h2><p class="subtitle">Un solo equipo para conectar tus sistemas, mejorar tu operación y crear nuevas oportunidades.</p></div><div class="cards">
-      <article class="service-card"><div class="symbol" aria-hidden="true">⌘</div><h3>Software a medida</h3><p>Plataformas y aplicaciones diseñadas alrededor de los procesos reales de tu empresa.</p></article>
-      <article class="service-card"><div class="symbol" aria-hidden="true">⚡</div><h3>Automatización e IA</h3><p>Menos tareas repetitivas, mejores respuestas y equipos más productivos.</p></article>
-      <article class="service-card"><div class="symbol" aria-hidden="true">↗</div><h3>Integración y soporte</h3><p>Unimos las herramientas que ya utilizas y acompañamos su evolución.</p></article>
-    </div></div></section>
-    <section class="section" id="nosotros" style="padding-top:0"><div class="wrap"><div class="cta" id="contacto"><div class="eyebrow"><i class="dot"></i> EMPECEMOS</div><h2 style="margin-top:20px">¿Listo para transformar tu operación?</h2><p>Cuéntanos qué necesita tu empresa. Podemos ayudarte a definir el siguiente paso tecnológico.</p><a class="button" href="mailto:contacto@ejemplo.com?subject=Quiero%20conocer%20DeTip" aria-label="Enviar correo de contacto; reemplazar dirección de ejemplo">Solicitar una reunión ↗</a><p style="font-size:12px;margin:16px auto 0;color:#b3c4e5">Personaliza el correo del botón antes de publicar.</p></div></div></section>
+  <main id="contenido">
+    <section class="hero section-dark" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow"><span class="pulse-dot"></span> TECH TEAM · DETIP COMPANY</span>
+          <h1 id="hero-title">Tu negocio evoluciona.<br><em>Tu tecnología también.</em></h1>
+          <p class="hero-lead">Un equipo tecnológico que conecta tus sistemas, automatiza procesos e incorpora inteligencia artificial donde realmente aporta valor.</p>
+          <div class="action-row"><a href="#contacto" class="button">Conversemos sobre tu empresa <span aria-hidden="true">↗</span></a><a href="#soluciones" class="text-link">Explorar soluciones <span aria-hidden="true">↓</span></a></div>
+          <div class="hero-notes"><span><span aria-hidden="true">✓</span> Soluciones a medida</span><span><span aria-hidden="true">✓</span> Acompañamiento continuo</span></div>
+        </div>
+        <div class="dashboard reveal" aria-label="Representación ilustrativa de un ecosistema digital conectado">
+          <div class="dash-top"><span class="dash-title"><span class="dash-sparkle">✳</span> Ecosistema DeTip</span><span class="dash-live"><span class="pulse-dot"></span> Conectado</span></div>
+          <div class="dash-center"><div class="center-icon">D<span>✦</span></div><span class="orbit orbit-1"></span><span class="orbit orbit-2"></span><span class="orbit orbit-3"></span></div>
+          <div class="dash-cards"><div class="dash-card"><span class="dash-icon">⌘</span><div><strong>Software</strong><small>Procesos centralizados</small></div><span class="dash-check">✓</span></div><div class="dash-card"><span class="dash-icon">⚡</span><div><strong>Automatización</strong><small>Flujos conectados</small></div><span class="dash-check">✓</span></div><div class="dash-card"><span class="dash-icon">✦</span><div><strong>IA aplicada</strong><small>Asistencia inteligente</small></div><span class="dash-check">✓</span></div></div>
+          <p class="dash-caption">Visualización conceptual · No representa datos reales</p>
+        </div>
+      </div>
+      <div class="hero-glow" aria-hidden="true"></div>
+    </section>
+    <section class="section" id="soluciones" aria-labelledby="solutions-title">
+      <div class="container"><div class="section-head reveal"><span class="section-kicker">QUÉ HACEMOS</span><h2 id="solutions-title">La tecnología debe resolver problemas, <span>no crear otros.</span></h2><p>Diseñamos soluciones conectadas a la manera en que tu empresa realmente trabaja.</p></div>
+        <div class="solution-grid"><article class="solution-card reveal"><span class="feature-icon">⌘</span><h3>Desarrollo de software</h3><p>Herramientas web, plataformas y sistemas personalizados para tus operaciones.</p><span class="card-number">01</span></article><article class="solution-card reveal"><span class="feature-icon">⚡</span><h3>Automatización e IA</h3><p>Reducimos tareas repetitivas y sumamos asistentes inteligentes a procesos útiles.</p><span class="card-number">02</span></article><article class="solution-card reveal"><span class="feature-icon">⇄</span><h3>Integraciones</h3><p>Conectamos CRM, sistemas existentes y servicios externos para evitar trabajo duplicado.</p><span class="card-number">03</span></article><article class="solution-card reveal"><span class="feature-icon">◈</span><h3>Soporte y evolución</h3><p>Mejoras continuas, mantenimiento y seguimiento con un equipo que entiende tu negocio.</p><span class="card-number">04</span></article></div>
+      </div>
+    </section>
+    <section class="section section-soft" id="metodo" aria-labelledby="method-title"><div class="container method-grid"><div class="reveal"><span class="section-kicker">NUESTRO ENFOQUE</span><h2 id="method-title">De una necesidad a una solución que evoluciona.</h2><p class="method-intro">No empezamos escribiendo código: empezamos entendiendo qué debe mejorar en tu negocio.</p><a class="button button-dark" href="#contacto">Evaluemos tu proyecto <span aria-hidden="true">↗</span></a></div><div class="steps"><div class="step reveal"><b>01</b><div><h3>Entendemos</h3><p>Identificamos objetivos, obstáculos y prioridades.</p></div></div><div class="step reveal"><b>02</b><div><h3>Diseñamos</h3><p>Definimos la solución y cómo se integrará con tus sistemas.</p></div></div><div class="step reveal"><b>03</b><div><h3>Implementamos</h3><p>Desarrollamos, probamos y ponemos en marcha.</p></div></div><div class="step reveal"><b>04</b><div><h3>Evolucionamos</h3><p>Acompañamos el uso y priorizamos nuevas mejoras.</p></div></div></div></div></section>
+    <section class="section" id="faq" aria-labelledby="faq-title"><div class="container faq-wrap"><div class="section-head reveal"><span class="section-kicker">PREGUNTAS FRECUENTES</span><h2 id="faq-title">Resolvamos tus dudas.</h2></div><div class="faq-items reveal"><details><summary>¿Necesito reemplazar mis sistemas actuales?</summary><p>No necesariamente. Primero evaluamos si conviene integrar tus herramientas actuales, modernizar componentes o desarrollar una nueva solución.</p></details><details><summary>¿Trabajan con empresas que no tienen equipo de tecnología?</summary><p>Sí. Podemos ayudarte a definir necesidades, prioridades y una ruta de implementación ajustada a tu operación.</p></details><details><summary>¿Pueden incorporar inteligencia artificial a mis procesos?</summary><p>Sí, cuando tiene sentido para el caso de uso. Analizamos datos, seguridad, costos y supervisión humana antes de recomendar una integración.</p></details><details><summary>¿Cómo comienza un proyecto?</summary><p>Con una conversación inicial para entender el reto, revisar el alcance y definir los próximos pasos.</p></details></div></div></section>
+    <section class="section contact-section" id="contacto" aria-labelledby="contact-title"><div class="container contact-grid"><div class="contact-copy reveal"><span class="section-kicker">HABLEMOS</span><h2 id="contact-title">Tu próximo avance empieza con una conversación.</h2><p>Cuéntanos qué quieres mejorar. Prepararemos un correo con tu información para que puedas enviarlo desde tu aplicación de email.</p><div class="contact-badge">✦ Tecnología pensada para tu negocio</div></div><form id="contact-form" class="contact-form reveal" novalidate><div class="field-row"><label>Tu nombre<input name="nombre" type="text" autocomplete="name" placeholder="Nombre y apellido" required maxlength="100"></label><label>Correo empresarial<input name="correo" type="email" autocomplete="email" placeholder="tu@empresa.com" required maxlength="150"></label></div><label>Empresa<input name="empresa" type="text" autocomplete="organization" placeholder="Nombre de tu empresa" maxlength="100"></label><label>¿Qué necesitas?<select name="interes" required><option value="">Selecciona una opción</option><option>Desarrollo de software</option><option>Automatización e IA</option><option>Integraciones de sistemas</option><option>Soporte y mantenimiento</option><option>Quiero orientación</option></select></label><label>Cuéntanos un poco más<textarea name="mensaje" rows="4" placeholder="¿Cuál es el principal desafío?" required maxlength="2000"></textarea></label><p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p><button class="button button-submit" type="submit">Preparar correo de contacto <span aria-hidden="true">↗</span></button><p class="form-note">Este formulario no envía ni almacena datos: abre tu aplicación de correo. Configura la dirección de destino en <code>script.js</code> antes de publicar.</p></form></div></section>
   </main>
-  <footer><div class="wrap foot"><span>© <span id="year"></span> DeTip. Tecnología para crecer.</span><span>Desarrollo · Automatización · Inteligencia artificial</span></div></footer>
-  <script src="script.js" defer></script>
+  <footer class="footer"><div class="container footer-inner"><a class="brand" href="#inicio">De<span>Tip</span><b>.</b></a><span>© <span id="year"></span> DeTip Company. Todos los derechos reservados.</span><a href="#inicio">Volver arriba ↑</a></div></footer>
 </body>
 </html>
